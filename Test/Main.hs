@@ -11,6 +11,7 @@ When in the IHP directory, you can run this file like:
  > main
 
 -}
+
 module Main where
 
 import Test.Hspec
@@ -30,7 +31,9 @@ import qualified Test.View.CSSFrameworkSpec
 import qualified Test.Controller.ContextSpec
 import qualified Test.Controller.ParamSpec
 import qualified Test.SchemaMigrationSpec
-
+{-|
+importing all essential modueles
+-}
 main :: IO ()
 main = hspec do
     Test.IDE.SchemaDesigner.CompilerSpec.tests
